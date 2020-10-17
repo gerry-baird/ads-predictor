@@ -1,0 +1,31 @@
+{
+  "name": "gerry-predictor",
+  "version": "v0.14",
+  "method_name": "predictFloat",
+  "input_schema": [
+    {
+      "name": "number",
+      "order": 0,
+      "type": "int64"
+    }
+  ],
+  "output_schema": {
+    "attributes": [
+      {
+        "name": "prediction",
+        "type": "float"
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Advanced ML Predictor",
+    "metrics": [
+      {
+        "name": "accuracy",
+        "value": 1.0
+      }
+    ],
+    "author": "Gerry",
+    "trained_at": "2020-10-16"
+  }
+}
