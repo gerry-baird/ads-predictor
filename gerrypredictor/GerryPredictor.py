@@ -18,7 +18,5 @@ class GerryPredictor:
 
         X = check_array(X, accept_sparse=True)
 
-        # Multiply the first element in X
-        # by 3 and return this in an numpy array
         result = np.array(['Yellow'])
         return result
