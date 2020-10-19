@@ -4,7 +4,7 @@ These simple predictors can be integrated into OPS and can form the basis for mo
 
 The custompredictors folder contains examples. 
 
-setup.py is just to package the predictors and upload then.
+setup.py is just to package the predictors ready for upload to PyPi library.
 
 ## OPS Predictor
 Run buildpickle.py to pickle the predictors and package them with an OPS deployment configuration. The pkl files can then be deployed as models to OPS.
