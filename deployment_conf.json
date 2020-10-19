@@ -1,7 +1,7 @@
 {
   "name": "gerry-predictor",
   "version": "v0.14",
-  "method_name": "predictFloat",
+  "method_name": "predict",
   "input_schema": [
     {
       "name": "number",
