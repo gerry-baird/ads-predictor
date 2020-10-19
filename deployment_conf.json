@@ -1,7 +1,7 @@
 {
-  "name": "gerry-predictor",
-  "version": "v0.14",
-  "method_name": "predictFloat",
+  "name": "string-predictor",
+  "version": "v0.1",
+  "method_name": "predict",
   "input_schema": [
     {
       "name": "number",
@@ -13,7 +13,7 @@
     "attributes": [
       {
         "name": "prediction",
-        "type": "float"
+        "type": "string"
       }
     ]
   },

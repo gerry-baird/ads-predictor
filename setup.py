@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="gerrypredictor-gerry.baird",  # Replace with your own username
-    version="0.0.14",
+    name="ops-custom-predictors-gerry.baird",  # User your name
+    version="0.0.1",
     author="Example Author",
     author_email="author@example.com",
     description="A small example package",
