@@ -6,7 +6,7 @@ from pathlib import Path
 from custompredictors.stringpredictor.StringPredictor import StringPredictor
 
 
-def buildpickle():
+def stringPredictorPickle():
 
     # Create the predictor
     stringPredictor = StringPredictor()
@@ -16,7 +16,7 @@ def buildpickle():
     val = stringPredictor.predict(param)
     print(f"Test Prediction for 6: {val}")
 
-    with Path(__file__).resolve().parent.joinpath('deployment_conf.json').open(mode='r') as fd:
+    with Path(__file__).resolve().parent.joinpath('string_predictor_conf.json').open(mode='r') as fd:
         conf = json.load(fd)
     with Path(__file__).resolve().parent.joinpath('string-predictor-archive-v002.pkl').open(mode='wb') as fd:
         pickle.dump(
@@ -29,4 +29,4 @@ def buildpickle():
 
 
 if __name__ == '__main__':
-    buildpickle()
+    stringPredictorPickle()
