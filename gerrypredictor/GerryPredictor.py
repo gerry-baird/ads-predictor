@@ -14,6 +14,7 @@ class GerryPredictor:
         result = np.array([calc])
         return result
 
+    # Not used
     def predictString(self, X):
 
         X = check_array(X, accept_sparse=True)
