@@ -6,5 +6,5 @@ sp = StringPredictor()
 param = np.array([[4]])
 
 val = sp.predict(param)
-print(f"GerryPredictor.PredictFloat() returning type {type(val)}")
+print(f"StringPredictor.Predict() returning type {type(val)}")
 print(f"Returned: {val}")

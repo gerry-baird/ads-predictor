@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 from pathlib import Path
 
-from ops.stringpredictor.StringPredictor import StringPredictor
+from custompredictors.stringpredictor.StringPredictor import StringPredictor
 
 
 def buildpickle():
@@ -18,7 +18,7 @@ def buildpickle():
 
     with Path(__file__).resolve().parent.joinpath('deployment_conf.json').open(mode='r') as fd:
         conf = json.load(fd)
-    with Path(__file__).resolve().parent.joinpath('string-predictor-archive-v001.pkl').open(mode='wb') as fd:
+    with Path(__file__).resolve().parent.joinpath('string-predictor-archive-v002.pkl').open(mode='wb') as fd:
         pickle.dump(
             obj={
                 'model': stringPredictor,
