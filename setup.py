@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ops-custom-predictors-gerry.baird",  # User your name
-    version="0.0.2",
+    version="0.0.3",
     author="Example Author",
     author_email="author@example.com",
     description="A small example package",

@@ -2,12 +2,14 @@
 
 These simple predictors can be integrated into OPS and can form the basis for more complex predictors.
 
-The custompredictors folder contains example. 
+The custompredictors folder contains examples. 
 
 setup.py is just to package the predictors and upload then.
 
 ## OPS Predictor
-Run buildpickle.py to pickle the predictor and package it with an OPS deployment configuration. The pkl file can then be deployed as a model to OPS.
+Run buildpickle.py to pickle the predictors and package them with an OPS deployment configuration. The pkl files can then be deployed as models to OPS.
+
+For each type of predictor there is a corresponding predictor_conf.json file. You can see which conf file is used for which predictor by looking at the code in buildpickle, but the naming convention used for th conf files shouldmake this clear too.
 
 
 ## Useful Commands
@@ -23,5 +25,5 @@ So that OPS can run the pickled predictors it needs access to the library or cod
 
 ```
 --extra-index-url https://test.pypi.org/simple/
-gerrypredictor-gerry.baird==0.0.14
+ops-custom-predictors-gerry.baird==0.0.2
 ```
