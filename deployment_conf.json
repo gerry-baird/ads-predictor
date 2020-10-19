@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "string-predictor",
   "version": "v0.1",
+=======
+  "name": "gerry-predictor",
+  "version": "v0.14",
+>>>>>>> f857a41289bcf7e1edbf2621c52f638a65dc59f4
   "method_name": "predict",
   "input_schema": [
     {
