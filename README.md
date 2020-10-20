@@ -2,13 +2,9 @@
 
 These simple predictors can be integrated into OPS and can form the basis for more complex predictors.
 
-The custompredictors folder contains some examples. 
+The custompredictors folder contains some examples along with their configuration files that are used by OPS
 
 Note that setup.py is just to package the predictors ready for upload to PyPi library. 
-
-The various conf files are used with buildpickle to pickle the models so they can be loaded into OPS.
-
-For each type of predictor there is a corresponding predictor_conf.json file. You can see which conf file is used for which predictor by looking at the code in buildpickle, but the naming convention used for the conf files shouldmake this clear too.
 
 ### Steps to Deploy a Predictor
 Here are the steps to deploy a predictor into OPS. This assumes you have some familiarity with PyPi library index and rebuilding OPS.
