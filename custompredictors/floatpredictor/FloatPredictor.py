@@ -11,9 +11,10 @@ class FloatPredictor:
 
         # Multiply the first element in X
         # by 3 and return this in an numpy array
-        input = X[0]
-        result = np.array([input * 3])
+        calc = X[0] * 3
+        result = np.array([calc], dtype=np.float)
 
-        #result = np.array([2, 4, 8, 16, 32, 64])
+        # Make the result one dimensional
+        result.shape = (1,)
 
         return result
