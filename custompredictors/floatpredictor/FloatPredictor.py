@@ -4,17 +4,24 @@ from sklearn.utils.validation import check_array
 
 class FloatPredictor:
 
-    # Always predicts Yellow
     def predict(self, X):
-
+        """ A reference implementation of a predicting function.
+        Parameters
+        ----------
+        X : {array-like, sparse matrix}, shape (n_samples, n_features)
+            The training input samples.
+        Returns
+        -------
+        y : ndarray, shape (n_samples,)
+            Returns an array of ones.
+        """
         X = check_array(X, accept_sparse=True)
+        #check_is_fitted(self, 'is_fitted_')
 
-        # Multiply the first element in X
-        # by 3 and return this in an numpy array
-        calc = X[0] * 3
-        result = np.array([calc], dtype=np.float)
+        samples = X.shape[0]  # The number of rows
 
-        # Make the result one dimensional
-        result.shape = (1,)
+        # broadcast a simple multiplication
+        res = X * 1.1
+        res.shape = (samples, )
 
-        return result
+        return res

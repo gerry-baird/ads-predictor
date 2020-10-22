@@ -1,6 +1,6 @@
 {
   "name": "float-predictor",
-  "version": "v0.1",
+  "version": "v0.10",
   "method_name": "predict",
   "input_schema": [
     {
