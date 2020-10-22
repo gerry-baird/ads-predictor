@@ -75,7 +75,6 @@ def intArrayPredictorPickle(archive_version):
 
 
 if __name__ == '__main__':
-    archive_version = "008"
+    archive_version = "010"
     stringPredictorPickle(archive_version)
     floatPredictorPickle(archive_version)
-    intArrayPredictorPickle(archive_version)
