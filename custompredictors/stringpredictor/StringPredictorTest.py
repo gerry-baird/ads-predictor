@@ -5,12 +5,10 @@ from StringPredictor import StringPredictor
 sp = StringPredictor()
 param = np.array([[4]])
 
-val = sp.predict(param)
-print(f"StringPredictor.Predict() returning type {type(val)}")
-print(f"Returned: {val}")
+res_matrix = sp.predict(param)
+print(f'res_matrix type: {type(res_matrix)}')
+print(f"res_matrix: {res_matrix}")
 
-first_element = val[0]
-print(f"First element is {type(first_element)}")
-
-
-print(f"Values Returned: {val}")
+res: np.ndarray = res_matrix[0]  # one input -> one output
+print(f'res type: {type(res)}')
+print(f"res data: {res}")

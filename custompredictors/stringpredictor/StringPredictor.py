@@ -9,5 +9,5 @@ class StringPredictor:
 
         X = check_array(X, accept_sparse=True)
 
-        result = np.array(['Yellow'])
+        result = np.array(['Red', 'White', 'Blue'])
         return result
